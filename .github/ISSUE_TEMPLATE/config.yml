@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Spelling error?
+    url: https://github.com/mrhappyma/userexedotme/fork
+    about: Fix it yourself and submit a pull request, thanks.
+  - name: Feedback on a post?
+    url: https://userexe.me/posts
+    about: There is a comment section for a reason!
+  - name: Anything else?
+    url: https://userexe.me/contact
+    about: Please reach out!
