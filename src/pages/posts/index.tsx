@@ -4,7 +4,9 @@ import Link from "next/link";
 import { getSortedPostsData } from "utils/posts";
 import Header from "~/components/header";
 
-const PostsList: NextPage<{ allPosts: PostData[] }> = ({ allPosts }) => {
+const PostsList: NextPage<{ allPosts: postMetadataWithId[] }> = ({
+  allPosts,
+}) => {
   return (
     <>
       <Head>

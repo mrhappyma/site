@@ -1,61 +1,25 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import fs from "fs";
 import path from "path";
-import matter, { type GrayMatterFile } from "gray-matter";
 
-const postsDirectory = path.join(process.cwd(), "posts");
+const postsDirectory = path.join(process.cwd(), "src/pages/posts");
 
-export function getSortedPostsData(): PostData[] {
-  // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData: PostData[] = fileNames.map((fileName) => {
-    // Remove ".md" from file name to get id
-    const id = fileName.replace(/.md$/, "");
+export function getSortedPostsData(): postMetadataWithId[] {
+  const filenames = fs.readdirSync(postsDirectory).filter((filename) => {
+    return filename.endsWith(".mdx");
+  });
 
-    // Read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
+  const metadata = filenames.map((filename) => {
+    const filepath = path.join(postsDirectory, filename);
 
-    // Use gray-matter to parse the post metadata section
-    const matterResult: GrayMatterFile<string> = matter(fileContents);
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    const { meta }: { meta: postMetadata } = require(`${filepath}`);
 
-    // Combine the data with the id
     return {
-      id,
-      ...matterResult.data,
+      id: filename.replace(/\.mdx$/, ""),
+      ...meta,
     };
   });
-  // Sort posts by date
-  return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
-}
 
-export function getAllPostIds() {
-  const fileNames = fs.readdirSync(postsDirectory);
-
-  return fileNames.map((fileName) => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, ""),
-      },
-    };
-  });
-}
-
-export function getPostData(id: string) {
-  const fullPath = path.join(postsDirectory, `${id}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-
-  // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents);
-
-  // Combine the data with the id
-  return {
-    id,
-    ...matterResult.data,
-  };
+  return metadata;
 }
