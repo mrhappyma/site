@@ -2,10 +2,6 @@ import { Tabs } from "dracula-ui";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-/*
-    TODO: Page info can probably be included in the page file to do this automatically
-          If anyone knows how to do this please tell me
-*/
 const pages: pageInfo[] = [
   {
     slug: "/",
@@ -15,6 +11,11 @@ const pages: pageInfo[] = [
   {
     slug: "/posts",
     title: "Blog",
+    display: true,
+  },
+  {
+    slug: "/uses",
+    title: "Uses",
     display: true,
   },
 ];

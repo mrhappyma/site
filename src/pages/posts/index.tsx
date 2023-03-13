@@ -34,10 +34,11 @@ const PostsList: NextPage<{ allPosts: postMetadataWithId[] }> = ({
 };
 
 export const getStaticProps: GetStaticProps = () => {
-  const allPosts = getSortedPostsData();
+  // const allPosts = getSortedPostsData();
   return {
     props: {
-      allPosts,
+      //allPosts,
+      allPosts: [],
     },
   };
 };

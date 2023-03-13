@@ -10,6 +10,7 @@ specifiers:
   '@next/font': ^13.2.0
   '@next/mdx': ^13.2.4
   '@types/eslint': ^8.21.1
+  '@types/mdx': ^2.0.3
   '@types/node': ^18.11.18
   '@types/prettier': ^2.7.2
   '@types/react': ^18.0.26
@@ -47,6 +48,7 @@ dependencies:
 
 devDependencies:
   '@types/eslint': 8.21.1
+  '@types/mdx': 2.0.3
   '@types/node': 18.14.1
   '@types/prettier': 2.7.2
   '@types/react': 18.0.28
@@ -434,7 +436,6 @@ packages:
 
   /@types/mdx/2.0.3:
     resolution: {integrity: sha512-IgHxcT3RC8LzFLhKwP3gbMPeaK7BM9eBH46OdapPA7yvuIUJ8H6zHZV53J8hGZcTSnt95jANt+rTBNUUc22ACQ==}
-    dev: false
 
   /@types/ms/0.7.31:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
