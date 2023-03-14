@@ -25,5 +25,6 @@ module.exports = {
         fixStyle: "inline-type-imports",
       },
     ],
+    "@typescript-eslint/restrict-template-expressions": "off"
   },
 };
