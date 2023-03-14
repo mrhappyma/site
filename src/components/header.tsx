@@ -14,6 +14,11 @@ const pages: pageInfo[] = [
     display: true,
   },
   {
+    slug: "/projects",
+    title: "Projects",
+    display: true,
+  },
+  {
     slug: "/uses",
     title: "Uses",
     display: true,

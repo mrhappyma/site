@@ -8,7 +8,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Dominic Ruggiero</title>
         <meta name="description" content="Dominic's personal website" />
-        <link rel="icon" href="/favicon.gif" type="image/gif" />
       </Head>
       <div className="drac-box drac-bg-black-secondary min-h-screen">
         <Header />
