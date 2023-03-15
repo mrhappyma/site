@@ -1,6 +1,6 @@
-import { Tabs } from "dracula-ui";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Tabs } from "dracula-ui-no-fonts";
 
 const pages: pageInfo[] = [
   {

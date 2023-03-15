@@ -18,7 +18,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.47.1
   '@typescript-eslint/parser': ^5.47.1
   autoprefixer: ^10.4.7
-  dracula-ui: ^1.0.6
+  dracula-ui-no-fonts: 1.0.6-1
   eslint: ^8.30.0
   eslint-config-next: 13.1.6
   next: 13.1.6
@@ -40,7 +40,7 @@ dependencies:
   '@mdx-js/react': 2.3.0_react@18.2.0
   '@next/font': 13.2.0
   '@next/mdx': 13.2.4_msthxdjvrhmdkfpqqalumiidgq
-  dracula-ui: 1.0.6_react@18.2.0
+  dracula-ui-no-fonts: 1.0.6-1_react@18.2.0
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1037,8 +1037,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /dracula-ui/1.0.6_react@18.2.0:
-    resolution: {integrity: sha512-yWo1ffQxuSGE9Hgeiy8D7X9qXhTeBwN1zkJ9eG7VtngneG8z1df6oGfBCQKQov0G1jUwtLnLo/P+RfZdTGztBQ==}
+  /dracula-ui-no-fonts/1.0.6-1_react@18.2.0:
+    resolution: {integrity: sha512-2Nw3KpLs50ATDAXQQBTUnvGbiQoybV3mYT/gPD5B4ONNfIRAgBw5q+WMhY76WmcEzluld5/iMYI/LEwC6ooGvg==}
     engines: {node: '>=10'}
     peerDependencies:
       react: '>=16'
