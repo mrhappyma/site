@@ -2,8 +2,9 @@ import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import Header from "~/components/header";
+import { getSortedPostsData, type postMetadataExtended } from "~/utils/posts";
 
-const PostsList: NextPage<{ allPosts: postMetadataWithId[] }> = ({
+const PostsList: NextPage<{ allPosts: postMetadataExtended[] }> = ({
   allPosts,
 }) => {
   return (
@@ -33,11 +34,11 @@ const PostsList: NextPage<{ allPosts: postMetadataWithId[] }> = ({
 };
 
 export const getStaticProps: GetStaticProps = () => {
-  // const allPosts = getSortedPostsData();
+  const allPosts = getSortedPostsData();
+
   return {
     props: {
-      //allPosts,
-      allPosts: [],
+      allPosts,
     },
   };
 };
