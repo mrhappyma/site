@@ -85,7 +85,7 @@ const UsesPage: NextPage = () => {
                   </a>
                 </li>
                 <li>
-                  Colorscheme? :{" "}
+                  Colorscheme?:{" "}
                   <a
                     href="https://draculatheme.com"
                     className="drac-anchor drac-text drac-text-white drac-text-purple--hover"

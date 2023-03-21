@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "NODE_ENV=development next-remote-watch posts",
     "lint": "next lint",
     "start": "next start"
   },
@@ -32,6 +32,7 @@
     "autoprefixer": "^10.4.7",
     "eslint": "^8.30.0",
     "eslint-config-next": "13.1.6",
+    "next-remote-watch": "^2.0.0",
     "postcss": "^8.4.14",
     "prettier": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1",

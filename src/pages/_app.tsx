@@ -14,7 +14,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.gif" type="image/gif" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={FiraCode.className}>
         <Component {...pageProps} />
