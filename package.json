@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@giscus/react": "^2.2.8",
     "@next/font": "^13.2.0",
     "@next/mdx": "^13.2.4",
     "@vercel/analytics": "^0.1.11",

@@ -8,6 +8,7 @@ import {
 } from "~/utils/posts";
 import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
+import Giscus from "@giscus/react";
 
 /*
     Custom components/renderers to pass to MDX.
@@ -40,6 +41,35 @@ const post: NextPage<{
           </h2>
           <p className="drac-text drac-text-lg drac-text-orange">{post.date}</p>
           <MDXRemote {...mdxSource} components={components} />
+          {/* <script
+            src="https://giscus.app/client.js"
+            data-repo="mrhappyma/site"
+            data-repo-id="R_kgDOJBxRXw"
+            data-category="Blog Comments"
+            data-category-id="DIC_kwDOJBxRX84CVCUS"
+            data-mapping="og:title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="transparent_dark"
+            data-lang="en"
+            data-loading="lazy"
+            crossOrigin="anonymous"
+            async
+          /> */}
+          <Giscus
+            host="https://comments.userexe.me"
+            repo="mrhappyma/site"
+            repoId="R_kgDOJBxRXw"
+            category="Blog Comments"
+            categoryId="DIC_kwDOJBxRX84CVCUS"
+            mapping="og:title"
+            reactionsEnabled="1"
+            lang="en"
+            loading="lazy"
+            theme="transparent_dark"
+          />
         </main>
       </div>
     </>
