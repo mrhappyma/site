@@ -25,6 +25,7 @@ module.exports = {
         fixStyle: "inline-type-imports",
       },
     ],
-    "@typescript-eslint/restrict-template-expressions": "off"
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
   },
 };

@@ -41,23 +41,7 @@ const post: NextPage<{
           </h2>
           <p className="drac-text drac-text-lg drac-text-orange">{post.date}</p>
           <MDXRemote {...mdxSource} components={components} />
-          {/* <script
-            src="https://giscus.app/client.js"
-            data-repo="mrhappyma/site"
-            data-repo-id="R_kgDOJBxRXw"
-            data-category="Blog Comments"
-            data-category-id="DIC_kwDOJBxRX84CVCUS"
-            data-mapping="og:title"
-            data-strict="1"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="top"
-            data-theme="transparent_dark"
-            data-lang="en"
-            data-loading="lazy"
-            crossOrigin="anonymous"
-            async
-          /> */}
+          <div className="pb-10" />
           <Giscus
             host="https://comments.userexe.me"
             repo="mrhappyma/site"
@@ -69,6 +53,7 @@ const post: NextPage<{
             lang="en"
             loading="lazy"
             theme="transparent_dark"
+            inputPosition="top"
           />
         </main>
       </div>
