@@ -1,6 +1,9 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Header from "~/components/header";
+import DiscordPresence from "~/components/home/discord";
+
+const DISCORD_ID = "606526727753170969";
 
 const Home: NextPage = () => {
   return (
@@ -60,6 +63,9 @@ const Home: NextPage = () => {
             </a>{" "}
             too.
           </p>
+          <div className="p-1">
+            <DiscordPresence id={DISCORD_ID} />
+          </div>
         </main>
       </div>
     </>

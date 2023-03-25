@@ -28,6 +28,7 @@ specifiers:
   react-dom: 18.2.0
   tailwindcss: ^3.2.0
   typescript: ^4.9.4
+  use-lanyard: ^1.4.2
   zod: ^3.20.6
 
 dependencies:
@@ -41,6 +42,7 @@ dependencies:
   next-mdx-remote: 4.4.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  use-lanyard: 1.4.2
   zod: 3.20.6
 
 devDependencies:
@@ -3897,6 +3899,11 @@ packages:
     dependencies:
       punycode: 2.3.0
     dev: true
+
+  /use-lanyard/1.4.2:
+    resolution: {integrity: sha512-XXsrBpq6omD0uXh6mXOh/723+5fHhhjpWEPbeFXj1Bp3GfGJkFIJpSbuejAOn3ASc4b/9UIZ/G66WFEMRX4XEA==}
+    engines: {node: '>=14'}
+    dev: false
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
