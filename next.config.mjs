@@ -9,7 +9,7 @@
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
-  pageExtensions: ["tsx", "mdx"],
+  pageExtensions: ["tsx"],
   /**
    * If you have the "experimental: { appDir: true }" setting enabled, then you
    * must comment the below `i18n` config out.

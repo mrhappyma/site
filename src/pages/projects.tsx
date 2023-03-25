@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "~/components/header";
-import ProjectCard from "~/components/projects/projectCard";
+import Card from "~/components/projectCard";
 
 const Projects: NextPage = () => {
   return (
@@ -13,11 +13,11 @@ const Projects: NextPage = () => {
         <Header />
         <main className="m-3 max-w-6xl space-y-2.5 p-2">
           <h1 className="drac-heading drac-heading-2xl drac-text-yellow-pink">
-            Projects
+            Notable Projects
           </h1>
           <div className="md:grid md:grid-cols-2 md:gap-2">
             <div className="py-2 md:py-0">
-              <ProjectCard
+              <Card
                 title="userexe.me"
                 description="This website!"
                 url="#"
@@ -26,7 +26,7 @@ const Projects: NextPage = () => {
               />
             </div>
             <div className="py-2 md:py-0">
-              <ProjectCard
+              <Card
                 title="Quizbowl Score"
                 description="Online quizbowl scoring system."
                 url="https://github.com/mrhappyma/qbs"
@@ -35,7 +35,7 @@ const Projects: NextPage = () => {
               />
             </div>
             <div className="py-2 md:py-0">
-              <ProjectCard
+              <Card
                 title="Potterbot"
                 description={
                   "Simple Discord bot to get Harry Potter information."
@@ -46,7 +46,7 @@ const Projects: NextPage = () => {
               />
             </div>
             <div className="py-2 md:py-0">
-              <ProjectCard
+              <Card
                 title="Other random stuff"
                 url="https://github.com/mrhappyma"
                 color="purple"

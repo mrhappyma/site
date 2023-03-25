@@ -23,6 +23,11 @@ const pages: pageInfo[] = [
     title: "Uses",
     display: true,
   },
+  {
+    slug: "/contact",
+    title: "Contact",
+    display: true,
+  },
 ];
 
 const Header: React.FC = () => {

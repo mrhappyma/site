@@ -11,18 +11,18 @@ const PostsList: NextPage<{ allPosts: postMetadataExtended[] }> = ({
     <>
       <Head>
         <title>Posts | Dominic Ruggiero</title>
-        <link rel="icon" href="/favicon.gif" type="image/gif" />
+        <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </Head>
       <div className="drac-box drac-bg-black-secondary min-h-screen">
         <Header />
         <main>
           <ul className="m-2 rounded-sm p-3">
-            {allPosts.map(({ id, date, title }) => (
+            {allPosts.map(({ id, date, title, description }) => (
               <Link href={`/posts/${id}`} key={id}>
-                <li className="drac-bg-purple m-1 rounded-md p-2 transition-all hover:p-3">
-                  {title}
-                  <br />
-                  {date}
+                <li className="drac-bg-purple m-1 rounded-md border-2 border-[#bd93f9] p-2 transition-all duration-200 hover:bg-transparent">
+                  <h3 className="text-xl">{title}</h3>
+                  <p>{description}</p>
+                  <p className="text-xs">{date}</p>
                 </li>
               </Link>
             ))}

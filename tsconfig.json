@@ -27,7 +27,9 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
-    "**/*.mjs"
+    "**/*.mjs",
+    "src/scripts/feed.js",
+    "next.config.esm"
   ],
   "exclude": ["node_modules"]
 }

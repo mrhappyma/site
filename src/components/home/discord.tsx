@@ -2,7 +2,6 @@ import { useLanyardWS } from "use-lanyard";
 
 const DiscordPresence: React.FC<{ id: `${bigint}` }> = ({ id }) => {
   const lanyard = useLanyardWS(id);
-  console.debug(lanyard);
 
   return (
     <>
@@ -15,7 +14,7 @@ const DiscordPresence: React.FC<{ id: `${bigint}` }> = ({ id }) => {
               ? "border-[#FEE75C] hover:bg-[#FEE75C]"
               : lanyard.discord_status == "dnd"
               ? "border-[#ED4245] hover:bg-[#ED4245]"
-              : "border-[#7289DA hover:bg-[#7289DA]") +
+              : "border-[#7289DA] hover:bg-[#7289DA]") +
             " rounded-md border-2 bg-opacity-80 p-2 transition-all duration-200 ease-in-out"
           }
         >
