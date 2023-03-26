@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* blog post css */
-h2 {
+.post-content h2 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -16,7 +15,7 @@ h2 {
   font-size: var(--font-4xl);
 }
 
-h3 {
+.post-content h3 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -29,7 +28,7 @@ h3 {
   font-size: var(--font-2xl);
 }
 
-a:not(.drac-tab-link) {
+.post-content a {
   color: var(--pink);
   text-decoration: none;
   border-bottom: 1px solid var(--pink);

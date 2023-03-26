@@ -43,7 +43,9 @@ const post: NextPage<{
             {post.title}
           </h2>
           <p className="drac-text drac-text-lg drac-text-orange">{post.date}</p>
-          <MDXRemote {...mdxSource} components={components} />
+          <div className="post-content">
+            <MDXRemote {...mdxSource} components={components} />
+          </div>
           <div className="pb-10" />
           <Giscus
             host="https://comments.userexe.me"
