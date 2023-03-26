@@ -43,7 +43,7 @@ const post: NextPage<{
             {post.title}
           </h2>
           <p className="drac-text drac-text-lg drac-text-orange">{post.date}</p>
-          <div className="post-content">
+          <div className="post-content space-y-3">
             <MDXRemote {...mdxSource} components={components} />
           </div>
           <div className="pb-10" />

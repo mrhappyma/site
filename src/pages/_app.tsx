@@ -4,6 +4,7 @@ import Head from "next/head";
 
 import "~/styles/globals.css";
 import "dracula-ui-no-fonts/styles/dracula-ui.css";
+import Script from "next/script";
 const FiraCode = Fira_Code({
   weight: "variable",
   subsets: ["latin-ext"],
@@ -14,12 +15,12 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <script
-          defer
-          data-domain="userexe.me"
-          src="https://analytics.userexe.me/js/script.js"
-        />
       </Head>
+      <Script
+        defer
+        data-domain="userexe.me"
+        src="https://analytics.userexe.me/js/script.js"
+      />
       <div className={FiraCode.className}>
         <Component {...pageProps} />
       </div>
