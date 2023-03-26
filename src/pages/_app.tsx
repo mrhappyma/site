@@ -1,6 +1,5 @@
 import { type AppType } from "next/dist/shared/lib/utils";
 import { Fira_Code } from "@next/font/google";
-import { Analytics } from "@vercel/analytics/react";
 import Head from "next/head";
 
 import "~/styles/globals.css";
@@ -15,10 +14,14 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <script
+          defer
+          data-domain="userexe.me"
+          src="https://analytics.userexe.me/js/script.js"
+        />
       </Head>
       <div className={FiraCode.className}>
         <Component {...pageProps} />
-        <Analytics />
       </div>
     </>
   );

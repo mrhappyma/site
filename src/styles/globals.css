@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* blog post css */
+h2 {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--yellow) 0,
+    var(--pink) 100%
+  );
+  background-size: 100%;
+  font-size: var(--font-4xl);
+}
+
+h3 {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--yellow) 0,
+    var(--pink) 100%
+  );
+  background-size: 100%;
+  font-size: var(--font-2xl);
+}
+
+a:not(.drac-tab-link) {
+  color: var(--pink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--pink);
+}

@@ -12,7 +12,6 @@
     "@giscus/react": "^2.2.8",
     "@next/font": "^13.2.0",
     "@next/mdx": "^13.2.4",
-    "@vercel/analytics": "^0.1.11",
     "dracula-ui-no-fonts": "1.0.6-1",
     "gray-matter": "^4.0.3",
     "next": "13.1.6",

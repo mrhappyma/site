@@ -9,6 +9,7 @@ import {
 import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import Giscus from "@giscus/react";
+import AnalyticsEmbed from "~/components/posts/analytics";
 
 /*
     Custom components/renderers to pass to MDX.
@@ -16,7 +17,9 @@ import Giscus from "@giscus/react";
     to handle import statements. Instead, you must include components in scope
     here.
 */
-const components = {};
+const components = {
+  Analytics: AnalyticsEmbed,
+};
 
 const post: NextPage<{
   post: postMetadataExtended;
