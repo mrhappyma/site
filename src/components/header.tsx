@@ -26,7 +26,7 @@ const pages: pageInfo[] = [
   {
     slug: "/contact",
     title: "Contact",
-    display: true,
+    display: false,
   },
 ];
 
