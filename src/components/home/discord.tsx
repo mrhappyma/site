@@ -1,8 +1,8 @@
-import { useLanyardWS } from "use-lanyard";
+import { type Data } from "use-lanyard";
 
-const DiscordPresence: React.FC<{ id: `${bigint}` }> = ({ id }) => {
-  const lanyard = useLanyardWS(id);
-
+const DiscordPresence: React.FC<{ lanyard: Data | undefined }> = ({
+  lanyard,
+}) => {
   return (
     <>
       {lanyard ? (
@@ -19,7 +19,7 @@ const DiscordPresence: React.FC<{ id: `${bigint}` }> = ({ id }) => {
           }
         >
           <a
-            href={"https://discord.com/users/" + id}
+            href={"https://discord.com/users/" + lanyard.discord_user.id}
             target="_blank"
             rel="noreferrer"
           >

@@ -2,10 +2,14 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Header from "~/components/header";
 import DiscordPresence from "~/components/home/discord";
+import ContactCardCollection from "~/components/contact";
+import { useLanyard, useLanyardWS } from "use-lanyard";
 
 const DISCORD_ID = "606526727753170969";
 
 const Home: NextPage = () => {
+  const lanyard = useLanyardWS(DISCORD_ID);
+
   return (
     <>
       <Head>
@@ -64,7 +68,13 @@ const Home: NextPage = () => {
             too.
           </p>
           <div className="p-1">
-            <DiscordPresence id={DISCORD_ID} />
+            <DiscordPresence lanyard={lanyard} />
+          </div>
+          <div>
+            <h1 className="drac-heading drac-heading-xl drac-text-yellow-pink py-3">
+              Contact
+            </h1>
+            <ContactCardCollection lanyard={lanyard} />
           </div>
         </main>
       </div>

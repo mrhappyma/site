@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.post-content {
+  color: var(--white);
+}
+
 .post-content h2 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
