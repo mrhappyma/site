@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "~/components/header";
 import DiscordPresence from "~/components/home/discord";
 import ContactCardCollection from "~/components/contact";
-import { useLanyard, useLanyardWS } from "use-lanyard";
+import { useLanyardWS } from "use-lanyard";
 
 const DISCORD_ID = "606526727753170969";
 
