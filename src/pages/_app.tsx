@@ -19,7 +19,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       <Script
         defer
         data-domain="userexe.me"
-        src="https://analytics.userexe.me/js/script.js"
+        src="https://analytics.userexe.me/js/script.tagged-events.js"
       />
       <div className={FiraCode.className}>
         <Component {...pageProps} />

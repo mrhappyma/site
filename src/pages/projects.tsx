@@ -16,7 +16,7 @@ const Projects: NextPage = () => {
             Notable Projects
           </h1>
           <div className="md:grid md:grid-cols-2 md:gap-2">
-            <div className="py-2 md:py-0">
+            <div className="plausible-event-name=Project+Visit py-2 md:py-0">
               <Card
                 title="userexe.me"
                 description="This website!"
@@ -25,7 +25,7 @@ const Projects: NextPage = () => {
                 date="March 2023"
               />
             </div>
-            <div className="py-2 md:py-0">
+            <div className="plausible-event-name=Project+Visit py-2 md:py-0">
               <Card
                 title="Quizbowl Score"
                 description="Online quizbowl scoring system."
@@ -34,7 +34,7 @@ const Projects: NextPage = () => {
                 date="Janurary 2023"
               />
             </div>
-            <div className="py-2 md:py-0">
+            <div className="plausible-event-name=Project+Visit py-2 md:py-0">
               <Card
                 title="Potterbot"
                 description={
@@ -45,7 +45,7 @@ const Projects: NextPage = () => {
                 date="November 2022"
               />
             </div>
-            <div className="py-2 md:py-0">
+            <div className="plausible-event-name=Project+Visit py-2 md:py-0">
               <Card
                 title="Other random stuff"
                 url="https://github.com/mrhappyma"
