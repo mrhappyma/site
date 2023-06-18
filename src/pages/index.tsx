@@ -16,6 +16,16 @@ const Home: NextPage = () => {
     setSentence(titles[Math.floor(Math.random() * titles.length)]);
   }, []);
 
+  // when p is pressed change the title
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "p") {
+        setSentence(titles[Math.floor(Math.random() * titles.length)]);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
   return (
     <>
       <Head>
