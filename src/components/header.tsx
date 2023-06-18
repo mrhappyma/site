@@ -11,7 +11,7 @@ const pages: pageInfo[] = [
   {
     slug: "/posts",
     title: "Blog",
-    display: true,
+    display: false,
   },
   {
     slug: "/projects",
