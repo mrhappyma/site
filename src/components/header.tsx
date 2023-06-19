@@ -28,6 +28,11 @@ const pages: pageInfo[] = [
     title: "Contact",
     display: false,
   },
+  {
+    slug: "/gone",
+    title: "Gone",
+    display: false,
+  },
 ];
 
 const Header: React.FC = () => {
