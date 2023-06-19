@@ -11,7 +11,7 @@ const Gone: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Gone - Dominic Ruggiero</title>
+        <title>Gone | Dominic Ruggiero</title>
       </Head>
       <div className="drac-box drac-bg-black-secondary min-h-screen">
         <Header />
@@ -74,8 +74,8 @@ const Gone: NextPage = () => {
                 {event.description}
               </p>
               <p className="drac-text drac-text-md drac-text-yellow">
-                {new Date(event.startTimestamp).toLocaleString()} -{" "}
-                {new Date(event.endTimestamp).toLocaleString()}
+                {new Date(event.startTimestamp).toLocaleDateString()} -{" "}
+                {new Date(event.endTimestamp).toLocaleDateString()}
               </p>
             </div>
           ))}

@@ -9,9 +9,7 @@ const contactCardCollection: React.FC<{ lanyard: Data | undefined }> = ({
       <div className="py-2 md:py-0">
         <Card
           title="Discord"
-          description={`${lanyard?.discord_user.username ?? "loading"}#${
-            lanyard?.discord_user.discriminator ?? "0000"
-          }`}
+          description={`@${lanyard?.discord_user.username ?? "loading"}`}
           url={`https://discord.com/users/${lanyard?.discord_user.id ?? "0"}`}
           /* TODO: Add Discord avatar */
           color="pink-purple"

@@ -22,7 +22,7 @@ const Projects: NextPage = () => {
                 description="This website!"
                 url="#"
                 color="yellow"
-                date="March 2023"
+                date="March 2023-present"
               />
             </div>
             <div className="plausible-event-name=Project+Visit py-2 md:py-0">
