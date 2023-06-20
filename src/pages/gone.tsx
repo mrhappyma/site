@@ -1,12 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "~/components/header";
+import type { goneEvent } from "~/types/gone";
 import { activeEvents, eventType, futureEvents } from "~/utils/gone";
 
-const Gone: NextPage = () => {
-  const active = activeEvents();
-  const future = futureEvents();
-
+const Gone: NextPage<{ active: goneEvent[]; future: goneEvent[] }> = ({
+  active,
+  future,
+}) => {
   const gone = !(active.length === 0);
   return (
     <>
@@ -85,3 +86,15 @@ const Gone: NextPage = () => {
   );
 };
 export default Gone;
+
+export const getServerSideProps = () => {
+  const active = activeEvents();
+  const future = futureEvents();
+
+  return {
+    props: {
+      active,
+      future,
+    },
+  };
+};
