@@ -13,7 +13,7 @@ const Projects: NextPage = () => {
         <Header />
         <main className="m-3 max-w-6xl space-y-2.5 p-2">
           <h1 className="drac-heading drac-heading-2xl drac-text-yellow-pink">
-            Notable Projects
+            Notable(ish) Projects
           </h1>
           <div className="md:grid md:grid-cols-2 md:gap-2">
             <div className="plausible-event-name=Project+Visit py-2 md:py-0">

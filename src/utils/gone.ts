@@ -7,6 +7,14 @@ export enum eventType {
 
 const events: goneEvent[] = [
   {
+    id: "20230620-test",
+    title: "Test Event",
+    description: "This is a test event. Nothing to see here.",
+    startTimestamp: 1687275000000,
+    endTimestamp: 1687289400000,
+    type: eventType.busy,
+  },
+  {
     id: "2023-iri",
     title: "IRI",
     description:

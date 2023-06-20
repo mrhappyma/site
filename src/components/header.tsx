@@ -31,7 +31,7 @@ const pages: pageInfo[] = [
   {
     slug: "/gone",
     title: "Gone",
-    display: false,
+    display: true,
   },
 ];
 
