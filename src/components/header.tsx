@@ -11,7 +11,7 @@ const pages: pageInfo[] = [
   {
     slug: "/posts",
     title: "Blog",
-    display: true,
+    display: false,
   },
   {
     slug: "/projects",
@@ -27,6 +27,11 @@ const pages: pageInfo[] = [
     slug: "/contact",
     title: "Contact",
     display: false,
+  },
+  {
+    slug: "/gone",
+    title: "Gone",
+    display: true,
   },
 ];
 

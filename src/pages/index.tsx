@@ -4,12 +4,28 @@ import Header from "~/components/header";
 import DiscordPresence from "~/components/home/discord";
 import ContactCardCollection from "~/components/contact";
 import { useLanyardWS } from "use-lanyard";
+import titles from "~/utils/titles";
+import { useEffect, useState } from "react";
 
 const DISCORD_ID = "606526727753170969";
 
 const Home: NextPage = () => {
   const lanyard = useLanyardWS(DISCORD_ID);
+  const [sentence, setSentence] = useState<string | undefined>();
+  useEffect(() => {
+    setSentence(titles[Math.floor(Math.random() * titles.length)]);
+  }, []);
 
+  // when p is pressed change the title
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "p") {
+        setSentence(titles[Math.floor(Math.random() * titles.length)]);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
   return (
     <>
       <Head>
@@ -22,9 +38,7 @@ const Home: NextPage = () => {
           <h1 className="drac-heading drac-heading-2xl drac-text-yellow-pink">
             Dominic Ruggiero
           </h1>
-          <p className="drac-text drac-text-lg drac-text-orange">
-            a.k.a. Dominic, a.k.a. user.exe
-          </p>
+          <p className="drac-text drac-text-lg drac-text-orange">{sentence}</p>
           <p className="drac-text drac-text-md drac-text-white">
             I&apos;m a odd human, trying to get not-so-awful grades and mess
             with software development and programming shenanigans. I prefer
