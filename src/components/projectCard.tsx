@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/restrict-template-expressions */
-
 const Card: React.FC<{
   title?: string;
   description?: string;
@@ -13,7 +11,7 @@ const Card: React.FC<{
       <div
         className={`drac-bg-${
           props.color ?? "black-light"
-        } rounded-md p-5 transition-all hover:shadow-2xl`}
+        } rounded-md p-5 transition-all hover:scale-110 hover:shadow-2xl`}
       >
         <h2 className={`drac-heading drac-heading-xl`}>{props.title}</h2>
         <p className={`drac-text drac-text-base`}>{props.description}</p>
