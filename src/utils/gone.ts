@@ -31,6 +31,14 @@ const events: goneEvent[] = [
     endTimestamp: 1689429600000,
     type: eventType.gone,
   },
+  {
+    id: "2023-familycamp",
+    title: "Family Camp",
+    description: "Yep it's family camp. What a busy couple of weeks...",
+    startTimestamp: 1689512400000,
+    endTimestamp: 1689951600000,
+    type: eventType.gone,
+  },
 ];
 export default events;
 
