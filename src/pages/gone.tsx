@@ -80,6 +80,10 @@ const Gone: NextPage<{ active: goneEvent[]; future: goneEvent[] }> = ({
               </p>
             </div>
           ))}
+          <p className="text-s italic">
+            Someone once got mad at me because I didn&apos;t reply to them. I
+            was gone for a week. It shall never happen again...
+          </p>
         </main>
       </div>
     </>
