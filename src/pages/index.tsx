@@ -42,13 +42,13 @@ const Home: NextPage = () => {
           <p className="drac-text drac-text-md drac-text-white">
             I&apos;m a odd human, trying to get not-so-awful grades and mess
             with software development and programming shenanigans. I prefer
-            backend-type stuff, but make some websites (I am <i>really</i> bad
-            at designing stuff). This site is made with{" "}
+            backend-type stuff, but I&apos;m getting into web stuff! This site
+            is made with{" "}
             <a
               target="_blank"
               rel="noreferrer"
               href="https://nextjs.org/"
-              className="drac-anchor drac-text drac-text-white drac-text-purple--hover"
+              className="drac-anchor drac-text drac-text-pink drac-text-purple--hover"
             >
               Next.js
             </a>
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
               target="_blank"
               rel="noreferrer"
               href="https://tailwindcss.com/"
-              className="drac-anchor drac-text drac-text-white drac-text-purple--hover"
+              className="drac-anchor drac-text drac-text-pink drac-text-purple--hover"
             >
               Tailwind CSS
             </a>
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
               target="_blank"
               rel="noreferrer"
               href="https://draculatheme.com/"
-              className="drac-anchor drac-text drac-text-white drac-text-purple--hover"
+              className="drac-anchor drac-text drac-text-pink drac-text-purple--hover"
             >
               Dracula color scheme
             </a>
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
               target="_blank"
               rel="noreferrer"
               href="https://github.com/mrhappyma/site"
-              className="drac-anchor drac-text drac-text-white drac-text-purple--hover"
+              className="drac-anchor drac-text drac-text-pink drac-text-purple--hover"
             >
               open source
             </a>{" "}
