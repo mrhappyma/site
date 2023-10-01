@@ -22,7 +22,7 @@ const Projects: NextPage = () => {
                 description="This website!"
                 url="#"
                 color="yellow"
-                date="March 2023-present"
+                date="March 2023"
               />
             </div>
             <div className="plausible-event-name=Project+Visit py-2 md:py-0">
@@ -31,7 +31,7 @@ const Projects: NextPage = () => {
                 description="Online quizbowl scoring system."
                 url="https://github.com/mrhappyma/qbs"
                 color="green"
-                date="Janurary 2023"
+                date="January 2023"
               />
             </div>
             <div className="plausible-event-name=Project+Visit py-2 md:py-0">
@@ -43,6 +43,15 @@ const Projects: NextPage = () => {
                 url="https://github.com/mrhappyma/potterbot"
                 color="cyan"
                 date="November 2022"
+              />
+            </div>
+            <div className="plausible-event-name=Project+Visit py-2 md:py-0">
+              <Card
+                title="Serverdash"
+                description={"Discord delivery bot done right."}
+                url="https://github.com/mrhappyma/serverdash"
+                color="red"
+                date="August 2023-present"
               />
             </div>
             <div className="plausible-event-name=Project+Visit py-2 md:py-0">
