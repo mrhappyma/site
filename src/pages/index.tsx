@@ -31,9 +31,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Dominic Ruggiero</title>
         <meta name="description" content="Dominic's personal website" />
-        <a rel="me" className="hidden" href="https://social.dino.icu/@dominic">
-          Mastodon
-        </a>
       </Head>
       <div className="drac-box drac-bg-black-secondary min-h-screen">
         <Header />
