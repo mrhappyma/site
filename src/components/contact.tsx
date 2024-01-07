@@ -45,14 +45,6 @@ const contactCardCollection: React.FC<{ lanyard: Data | undefined }> = ({
           color="cyan-green"
         />
       </div>
-      <div className="py-2 md:py-0">
-        <Card
-          title="Phone (text or Signal)"
-          description="+1 (667) 966-2096"
-          url="sms:+16679662096"
-          color="yellow-pink"
-        />
-      </div>
     </div>
   );
 };
