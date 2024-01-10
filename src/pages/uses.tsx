@@ -28,8 +28,9 @@ const UsesPage: NextPage = () => {
                   >
                     Sony Vaio VPC-B11PGX/B
                   </a>{" "}
-                  (~2010)
+                  (~2010) (accepting donations)
                 </li>
+                <li>Phon(e): Google Pixel 8 (2023)</li>
                 <li>
                   Tablet:{" "}
                   <a
@@ -85,15 +86,6 @@ const UsesPage: NextPage = () => {
                   </a>
                 </li>
                 <li>
-                  Colorscheme?:{" "}
-                  <a
-                    href="https://draculatheme.com"
-                    className="drac-anchor drac-text drac-text-white drac-text-purple--hover"
-                  >
-                    Dracula
-                  </a>
-                </li>
-                <li>
                   Preferred (programming) Language:{" "}
                   <a
                     href="https://typescriptlang.org/"
@@ -122,13 +114,16 @@ const UsesPage: NextPage = () => {
               </h2>
               <ul className="drac-list drac-list-unordered drac-list-purple drac-text-white">
                 <li>
-                  <a
-                    href="https://www.yubico.com/product/yubikey-5-nfc/"
-                    className="drac-anchor drac-text drac-text-white drac-text-purple--hover"
-                  >
-                    Yubikey 5 NFC
-                  </a>{" "}
-                  - physical 2 factor authenticator. I have 2 of them.
+                  <s className="line-through">
+                    <a
+                      href="https://www.yubico.com/product/yubikey-5-nfc/"
+                      className="drac-anchor drac-text drac-text-white drac-text-purple--hover"
+                    >
+                      Yubikey 5 NFC
+                    </a>{" "}
+                    - physical 2 factor authenticator. I have 2 of them.
+                  </s>{" "}
+                  nope lost them 😅
                 </li>
                 <li>
                   Not much. My setup is pretty clean, just what I need and
