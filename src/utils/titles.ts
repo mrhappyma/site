@@ -7,10 +7,11 @@ const titles = [
   "mostly harmless",
   "I am Groot",
   "I'm not a robot",
-  '"haha nerd"',
+  "haha nerd",
   "easily distracted",
   "somehow still awake",
   "myself",
+  "YOUR MOM!!!!"
 ];
 
 export default titles;
